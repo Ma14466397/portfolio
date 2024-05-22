@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: #ff5ad6;
+      }
+      .mobile-container {
+        margin: auto;
+
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #f3b8e4;
+        position: relative;
+      }
+
+      .topnav #myLinks {
+        display: none;
+      }
+
+      .topnav a {
+        color: rgb(0, 0, 0);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      .topnav a.icon {
+        background: rgb(255, 66, 230);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav a:hover {
+        background-color: #ff2ad1;
+        color: rgb(255, 255, 255);
+      }
+
+      .active {
+        background-color: #ff1cf4;
+        color: white;
+      }
+      .h1 {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 100px;
+        text-align: center;
+        background-image: url(download.jpeg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      p {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 22px;
+        text-align: center;
+        background-image: url(pexels-luisdelrio-15286.jpg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      h3 {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 35px;
+        text-align: center;
+        background-image: url(pexels-luisdelrio-15286.jpg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .p-1 {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 20px;
+        text-align: center;
+        background-image: url(colour.jpeg);
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .div-1 {
+        background-color: rgb(238, 186, 227);
+        width: 380px;
+        height: 500px;
+        border: 1px solid rgb(238, 186, 227);
+        overflow: auto;
+        border-radius: 5px;
+      }
+      #main {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #footer-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f33cea;
+        padding: 15px;
+        list-style-type: none;
+        line-height: 1.5;
+      }
+      .foo-1 {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 20px;
+      }
+      .foo-2 {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 20px;
+      }
+      .foo-3 {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 20px;
+      }
+
+
+      @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+  .p-1{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  #main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-1{
+    margin-bottom: 20px;
+  }
+  .h1{
+    font-size: 30px;
+  }
+  .p-1{
+    font-size: 15px;
+  }
+  .p-2{
+    font-size: 17px;
+  }
+  #footer-1{
+    display: grid;
+  }
+  .foo-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="#home" class="active">PORTFOLIO</a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#about">Careers</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <h1 class="h1">
+      Expert on Elementry <br />
+      Y Design Web
+    </h1>
+
+    <p class="p-2">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quae nulla
+      molestias modi ab quaerat exercitationem totam tempora, earum, voluptas
+      dignissimos sunt? Repellendus error, magni molestias nostrum impedit nisi
+      reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Laborum nemo facere architecto vel itaque laudantium, explicabo debitis
+      saepe est molestiae natus obcaecati aspernatur distinctio illum similique
+      corporis placeat minima autem. Lorem ipsum dolor sit amet consectetur,
+      adipisicing elit. Esse quos alias provident accusamus ea cum. Nulla velit
+      architecto voluptatum eos sint sequi id magni eum nihil minima itaque,
+      consequuntur non?Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Ut, aliquam ullam odio cumque dignissimos laudantium fugiat distinctio! Ut
+      dolorem dicta reiciendis nam ullam quae quaerat illo blanditiis itaque,
+      consectetur modi.
+    </p>
+    <h3>Mango Mango</h3>
+    <div id="main">
+      <div class="div-1">
+        <p class="p-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+          consectetur sit maxime consequatur dicta soluta veritatis voluptates
+          voluptatum beatae ex rem ad impedit repellat sequi ut voluptate.
+          Perferendis, itaque libero! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Exercitationem eaque reiciendis consequatur dicta.
+          Nobis, optio similique placeat harum nulla ipsa excepturi sunt
+          corrupti eos ut quas adipisci tenetur odio magnam? Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Velit vel ullam fugiat
+          perspiciatis accusantium recusandae accusamus error quibusdam
+          obcaecati dolorum soluta eius sit officia, ipsam, porro ex placeat
+          sequi? Tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Aut, dolores! A nam quasi ea maiores, at beatae totam placeat
+          ipsam consectetur rem magnam provident fugiat rerum facilis
+          perferendis, aliquam assumenda? Ab tempora cupiditate numquam veniam
+          cumque quas eius a ut totam, harum labore laudantium eaque ducimus
+          dolores? At, amet sint doloremque repudiandae quidem minus odio alias
+          exercitationem rem corporis dolorem quisquam sed fugit ullam! Deleniti
+          est suscipit voluptas cum maxime architecto ipsum harum, nesciunt
+          consequuntur beatae doloremque alias natus eveniet fuga reprehenderit
+          dignissimos voluptatum qui, enim repudiandae. Ipsa explicabo cum
+          alias, voluptatibus provident aperiam asperiores natus ducimus
+          accusamus, voluptas saepe iste. Repellat nisi ratione doloribus sit
+          qui officia eligendi non voluptatibus consectetur ullam incidunt, ab,
+          aut maiores fuga atque officiis eveniet earum, fugiat id iusto ad quos
+          itaque. Debitis quidem deserunt labore, harum a praesentium quam ut
+          suscipit dolorum dolorem iure asperiores ullam beatae quibusdam nam
+          pariatur repudiandae. Ipsam debitis ad eius molestiae illum
+          voluptatum, magni voluptatibus eligendi. Consequuntur repudiandae
+          earum nulla atque natus quaerat ducimus incidunt! Magnam, ea quis
+          itaque similique sunt deserunt doloribus exercitationem ipsa
+          accusantium non nisi perferendis tenetur animi quod tempora voluptate
+          molestias cumque quas pariatur corporis qui provident inventore
+          molestiae? Inventore ullam ipsam ex assumenda tempore necessitatibus
+          dicta laboriosam incidunt corporis in laudantium hic, sit quasi
+          excepturi debitis omnis quidem autem laborum dignissimos nam
+          consequatur doloremque. Dicta tempore eveniet recusandae praesentium
+          necessitatibus molestiae iure porro similique exercitationem veritatis
+          a, soluta autem numquam veniam velit minima. Blanditiis tempore error
+          accusantium, facere ipsam non aut modi maiores culpa quam aspernatur,
+          sunt fugiat incidunt facilis quasi. Molestias nobis pariatur
+          asperiores doloremque dolorem, odio repudiandae distinctio inventore
+          maiores labore optio amet facere aliquid vero animi. Quod nobis saepe
+          asperiores velit? Blanditiis vero iste alias facere, ratione quos rem,
+          fugit, eum quisquam voluptatum voluptatibus repellat! Reiciendis amet
+          vero odit, distinctio repudiandae quos ipsa modi quo quod rem, numquam
+          exercitationem quam iusto esse cumque libero, aliquid laboriosam
+          molestias consequuntur ut. Aliquid quae, saepe atque repellat illum
+          non vero quia sint inventore nemo hic nam magnam, sed voluptatibus
+          numquam dolorem cum ut unde esse delectus nulla! Nulla repellendus
+          voluptatum repellat suscipit voluptatibus cumque vel aspernatur fugiat
+          libero expedita architecto magni consequatur, assumenda corporis eum
+          reiciendis amet alias sed dolor consectetur quas. Porro, facere amet
+          quam tempore repellat, recusandae vero placeat enim odio explicabo
+          quibusdam nesciunt eius eaque possimus quo aliquid. Dolore omnis quo
+          sunt, totam impedit ipsam rerum non consequatur aut cum minima iusto
+          molestias quas quibusdam exercitationem assumenda consectetur odio
+          deserunt sapiente, earum commodi blanditiis? Libero quo, aspernatur
+          labore error laudantium eius provident ut debitis nam iure consequatur
+          a inventore explicabo deserunt! Fugiat assumenda natus rerum doloribus
+          soluta sequi ratione possimus eligendi praesentium tempora,
+          accusantium laudantium dolorum recusandae est quas ab quae nesciunt
+          velit qui placeat! Quidem quisquam quas odio qui impedit quasi culpa
+          possimus ex autem consequatur! Quidem aliquam aperiam ipsa sapiente.
+          Enim perferendis, sint voluptas eius autem, omnis eligendi placeat
+          error officiis impedit necessitatibus laudantium optio dicta porro
+          tempora nobis neque cupiditate. Sed pariatur consequuntur dolor iste,
+          quasi sequi!
+        </p>
+      </div>
+      <div class="div-1">
+        <p class="p-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+          consectetur sit maxime consequatur dicta soluta veritatis voluptates
+          voluptatum beatae ex rem ad impedit repellat sequi ut voluptate.
+          Perferendis, itaque libero! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Exercitationem eaque reiciendis consequatur dicta.
+          Nobis, optio similique placeat harum nulla ipsa excepturi sunt
+          corrupti eos ut quas adipisci tenetur odio magnam? Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Velit vel ullam fugiat
+          perspiciatis accusantium recusandae accusamus error quibusdam
+          obcaecati dolorum soluta eius sit officia, ipsam, porro ex placeat
+          sequi? Tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Aut, dolores! A nam quasi ea maiores, at beatae totam placeat
+          ipsam consectetur rem magnam provident fugiat rerum facilis
+          perferendis, aliquam assumenda? Ab tempora cupiditate numquam veniam
+          cumque quas eius a ut totam, harum labore laudantium eaque ducimus
+          dolores? At, amet sint doloremque repudiandae quidem minus odio alias
+          exercitationem rem corporis dolorem quisquam sed fugit ullam! Deleniti
+          est suscipit voluptas cum maxime architecto ipsum harum, nesciunt
+          consequuntur beatae doloremque alias natus eveniet fuga reprehenderit
+          dignissimos voluptatum qui, enim repudiandae. Ipsa explicabo cum
+          alias, voluptatibus provident aperiam asperiores natus ducimus
+          accusamus, voluptas saepe iste. Repellat nisi ratione doloribus sit
+          qui officia eligendi non voluptatibus consectetur ullam incidunt, ab,
+          aut maiores fuga atque officiis eveniet earum, fugiat id iusto ad quos
+          itaque. Debitis quidem deserunt labore, harum a praesentium quam ut
+          suscipit dolorum dolorem iure asperiores ullam beatae quibusdam nam
+          pariatur repudiandae. Ipsam debitis ad eius molestiae illum
+          voluptatum, magni voluptatibus eligendi. Consequuntur repudiandae
+          earum nulla atque natus quaerat ducimus incidunt! Magnam, ea quis
+          itaque similique sunt deserunt doloribus exercitationem ipsa
+          accusantium non nisi perferendis tenetur animi quod tempora voluptate
+          molestias cumque quas pariatur corporis qui provident inventore
+          molestiae? Inventore ullam ipsam ex assumenda tempore necessitatibus
+          dicta laboriosam incidunt corporis in laudantium hic, sit quasi
+          excepturi debitis omnis quidem autem laborum dignissimos nam
+          consequatur doloremque. Dicta tempore eveniet recusandae praesentium
+          necessitatibus molestiae iure porro similique exercitationem veritatis
+          a, soluta autem numquam veniam velit minima. Blanditiis tempore error
+          accusantium, facere ipsam non aut modi maiores culpa quam aspernatur,
+          sunt fugiat incidunt facilis quasi. Molestias nobis pariatur
+          asperiores doloremque dolorem, odio repudiandae distinctio inventore
+          maiores labore optio amet facere aliquid vero animi. Quod nobis saepe
+          asperiores velit? Blanditiis vero iste alias facere, ratione quos rem,
+          fugit, eum quisquam voluptatum voluptatibus repellat! Reiciendis amet
+          vero odit, distinctio repudiandae quos ipsa modi quo quod rem, numquam
+          exercitationem quam iusto esse cumque libero, aliquid laboriosam
+          molestias consequuntur ut. Aliquid quae, saepe atque repellat illum
+          non vero quia sint inventore nemo hic nam magnam, sed voluptatibus
+          numquam dolorem cum ut unde esse delectus nulla! Nulla repellendus
+          voluptatum repellat suscipit voluptatibus cumque vel aspernatur fugiat
+          libero expedita architecto magni consequatur, assumenda corporis eum
+          reiciendis amet alias sed dolor consectetur quas. Porro, facere amet
+          quam tempore repellat, recusandae vero placeat enim odio explicabo
+          quibusdam nesciunt eius eaque possimus quo aliquid. Dolore omnis quo
+          sunt, totam impedit ipsam rerum non consequatur aut cum minima iusto
+          molestias quas quibusdam exercitationem assumenda consectetur odio
+          deserunt sapiente, earum commodi blanditiis? Libero quo, aspernatur
+          labore error laudantium eius provident ut debitis nam iure consequatur
+          a inventore explicabo deserunt! Fugiat assumenda natus rerum doloribus
+          soluta sequi ratione possimus eligendi praesentium tempora,
+          accusantium laudantium dolorum recusandae est quas ab quae nesciunt
+          velit qui placeat! Quidem quisquam quas odio qui impedit quasi culpa
+          possimus ex autem consequatur! Quidem aliquam aperiam ipsa sapiente.
+          Enim perferendis, sint voluptas eius autem, omnis eligendi placeat
+          error officiis impedit necessitatibus laudantium optio dicta porro
+          tempora nobis neque cupiditate. Sed pariatur consequuntur dolor iste,
+          quasi sequi!
+        </p>
+      </div>
+      <div class="div-1">
+        <p class="p-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+          consectetur sit maxime consequatur dicta soluta veritatis voluptates
+          voluptatum beatae ex rem ad impedit repellat sequi ut voluptate.
+          Perferendis, itaque libero! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Exercitationem eaque reiciendis consequatur dicta.
+          Nobis, optio similique placeat harum nulla ipsa excepturi sunt
+          corrupti eos ut quas adipisci tenetur odio magnam? Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Velit vel ullam fugiat
+          perspiciatis accusantium recusandae accusamus error quibusdam
+          obcaecati dolorum soluta eius sit officia, ipsam, porro ex placeat
+          sequi? Tenetur. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Aut, dolores! A nam quasi ea maiores, at beatae totam placeat
+          ipsam consectetur rem magnam provident fugiat rerum facilis
+          perferendis, aliquam assumenda? Ab tempora cupiditate numquam veniam
+          cumque quas eius a ut totam, harum labore laudantium eaque ducimus
+          dolores? At, amet sint doloremque repudiandae quidem minus odio alias
+          exercitationem rem corporis dolorem quisquam sed fugit ullam! Deleniti
+          est suscipit voluptas cum maxime architecto ipsum harum, nesciunt
+          consequuntur beatae doloremque alias natus eveniet fuga reprehenderit
+          dignissimos voluptatum qui, enim repudiandae. Ipsa explicabo cum
+          alias, voluptatibus provident aperiam asperiores natus ducimus
+          accusamus, voluptas saepe iste. Repellat nisi ratione doloribus sit
+          qui officia eligendi non voluptatibus consectetur ullam incidunt, ab,
+          aut maiores fuga atque officiis eveniet earum, fugiat id iusto ad quos
+          itaque. Debitis quidem deserunt labore, harum a praesentium quam ut
+          suscipit dolorum dolorem iure asperiores ullam beatae quibusdam nam
+          pariatur repudiandae. Ipsam debitis ad eius molestiae illum
+          voluptatum, magni voluptatibus eligendi. Consequuntur repudiandae
+          earum nulla atque natus quaerat ducimus incidunt! Magnam, ea quis
+          itaque similique sunt deserunt doloribus exercitationem ipsa
+          accusantium non nisi perferendis tenetur animi quod tempora voluptate
+          molestias cumque quas pariatur corporis qui provident inventore
+          molestiae? Inventore ullam ipsam ex assumenda tempore necessitatibus
+          dicta laboriosam incidunt corporis in laudantium hic, sit quasi
+          excepturi debitis omnis quidem autem laborum dignissimos nam
+          consequatur doloremque. Dicta tempore eveniet recusandae praesentium
+          necessitatibus molestiae iure porro similique exercitationem veritatis
+          a, soluta autem numquam veniam velit minima. Blanditiis tempore error
+          accusantium, facere ipsam non aut modi maiores culpa quam aspernatur,
+          sunt fugiat incidunt facilis quasi. Molestias nobis pariatur
+          asperiores doloremque dolorem, odio repudiandae distinctio inventore
+          maiores labore optio amet facere aliquid vero animi. Quod nobis saepe
+          asperiores velit? Blanditiis vero iste alias facere, ratione quos rem,
+          fugit, eum quisquam voluptatum voluptatibus repellat! Reiciendis amet
+          vero odit, distinctio repudiandae quos ipsa modi quo quod rem, numquam
+          exercitationem quam iusto esse cumque libero, aliquid laboriosam
+          molestias consequuntur ut. Aliquid quae, saepe atque repellat illum
+          non vero quia sint inventore nemo hic nam magnam, sed voluptatibus
+          numquam dolorem cum ut unde esse delectus nulla! Nulla repellendus
+          voluptatum repellat suscipit voluptatibus cumque vel aspernatur fugiat
+          libero expedita architecto magni consequatur, assumenda corporis eum
+          reiciendis amet alias sed dolor consectetur quas. Porro, facere amet
+          quam tempore repellat, recusandae vero placeat enim odio explicabo
+          quibusdam nesciunt eius eaque possimus quo aliquid. Dolore omnis quo
+          sunt, totam impedit ipsam rerum non consequatur aut cum minima iusto
+          molestias quas quibusdam exercitationem assumenda consectetur odio
+          deserunt sapiente, earum commodi blanditiis? Libero quo, aspernatur
+          labore error laudantium eius provident ut debitis nam iure consequatur
+          a inventore explicabo deserunt! Fugiat assumenda natus rerum doloribus
+          soluta sequi ratione possimus eligendi praesentium tempora,
+          accusantium laudantium dolorum recusandae est quas ab quae nesciunt
+          velit qui placeat! Quidem quisquam quas odio qui impedit quasi culpa
+          possimus ex autem consequatur! Quidem aliquam aperiam ipsa sapiente.
+          Enim perferendis, sint voluptas eius autem, omnis eligendi placeat
+          error officiis impedit necessitatibus laudantium optio dicta porro
+          tempora nobis neque cupiditate. Sed pariatur consequuntur dolor iste,
+          quasi sequi!
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <footer>
+      <div id="footer-1">
+        <div class="foo-1">
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About</li>
+          <li>Careers</li>
+        </div>
+        <div class="foo-2">
+          <li>Blogs</li>
+          <li>Location</li>
+          <li>Help</li>
+          <li>Feedback</li>
+        </div>
+        <div class="foo-3">
+          <label for="text"> Your Email</label>
+          <input type="text" placeholder="Your Email" />
+          <button>Submit</button>
+        </div>
+      </div>
+      <div id="end">
+
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
